@@ -43,12 +43,15 @@ Using CASE logic, projects are categorized into:
 - Goal Achieved
 - Not Achieved
 
-# Crowdfunding_Performance_Project
------------------------------------------ Crowd Funding SQL Analysis Performance Queries ------------------------------------------------
+
+## Crowd Funding SQL Analysis Performance Queries 
+
+```sql
 CREATE database croud_funding;
 USE croud_funding;
 DESCRIBE main_data_cf_project_1csv;
-------------------------------------
+```
+
 ### 1. Total Projects by State (failed / canceled / successful)
 
 ```sql
@@ -102,7 +105,7 @@ ORDER BY total_projects DESC;
 ```
 
 ### 7. Projects with Zero Backers
-# Find poor performing projects.
+## Find poor performing projects.
 
 ```sql
 SELECT 
@@ -115,7 +118,7 @@ WHERE `Number of Backers` = 0;
 ```
 
 ### 8. Category-wise Total Backers
-# Which category attracts more supporters.
+## Which category attracts more supporters.
 
 ```sql
 SELECT 
@@ -127,7 +130,7 @@ ORDER BY total_backers DESC;
 ```
 
 ### 9. Top 5 Countries by Total Funding
-# Which country raised most money.
+## Which country raised most money.
 
 ```sql
 SELECT 
@@ -140,7 +143,7 @@ LIMIT 5;
 ```
 
 ### 10. Funding Gap (Goal vs Raised)
-# How much funding is still needed.
+## How much funding is still needed.
 
 ```sql
 SELECT 
@@ -167,7 +170,7 @@ GROUP BY state;
 ```
 
 ### 12. Rank Projects by Amount Raised (Window Function)
-#  Shows highest earning projects with ranking.
+##  Shows highest earning projects with ranking.
 
 ```sql
 SELECT 
@@ -179,7 +182,7 @@ FROM main_data_cf_project_1csv;
 ```
 
 ### 13. Running Total of Amount Raised by Year (Window Function)
-#  Shows cumulative funding trend.
+##  Shows cumulative funding trend.
 
 ```sql
 SELECT 
@@ -192,7 +195,7 @@ GROUP BY Year;
 ```
 
 ### 14. Project Funding Status (Advanced CASE + Join)
-#  Check if project met funding goal.
+##  Check if project met funding goal.
 
 ```sql
 SELECT 
