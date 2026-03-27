@@ -1,6 +1,6 @@
 # 📊 Crowd Funding SQL Analysis
-   (Group Project)
-## 🔍 Overview   (Group Project)
+   
+## 🔍 Overview   
 
 This project focuses on analyzing a crowdfunding dataset using SQL to extract meaningful insights about project performance. 
 The dataset includes details such as project state (successful/failed), funding amount, backers, country, and time trends.
