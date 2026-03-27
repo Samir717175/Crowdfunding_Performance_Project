@@ -1,6 +1,5 @@
 # 📊 Crowd Funding SQL Analysis
 Prformed end-to-end data analysis. In group project.
-   
 ## 🔍 Overview   
 
 This project focuses on analyzing a crowdfunding dataset using SQL to extract meaningful insights about project performance. 
