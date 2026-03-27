@@ -1,13 +1,13 @@
-##📊 Crowd Funding SQL Analysis
-#🔍 Overview
+## 📊 Crowd Funding SQL Analysis
+# 🔍 Overview
 
 This project focuses on analyzing a crowdfunding dataset using SQL to extract meaningful insights about project performance. 
 The dataset includes details such as project state (successful/failed), funding amount, backers, country, and time trends.
 By applying SQL concepts like aggregation, grouping, window functions, and CASE statements, the project evaluates how different factors impact crowdfunding success.
 
-#🎯 Objective
+# 🎯 Objective
 
--The main objectives of this analysis are:
+- The main objectives of this analysis are:
 
 To analyze the distribution of projects by state (successful, failed, canceled)
 To identify top-performing countries based on total funding raised
@@ -18,30 +18,30 @@ To evaluate the success rate of projects
 To apply window functions for ranking and cumulative analysis
 To determine whether projects achieved their funding goals
 
-#📈 Key Findings
+# 📈 Key Findings
 
 Project Distribution:
 Most projects fall into specific states (e.g., failed or successful), highlighting competition and risk in crowdfunding.
--Top Countries by Funding:
+- Top Countries by Funding:
 Certain countries contribute significantly more to total funding, indicating stronger crowdfunding ecosystems.
--Top Projects:
+- Top Projects:
 A small number of projects generate extremely high funding, showing a power-law distribution (few winners dominate).
--Backer Analysis:
+- Backer Analysis:
 The average number of backers gives insight into audience engagement and campaign reach.
--Yearly Trends:
+- Yearly Trends:
 The number of projects has changed over time, showing growth or decline in crowdfunding popularity.
--Monthly Trends:
+- Monthly Trends:
 Some months have higher project launches, suggesting seasonal patterns.
--Success Rate:
+- Success Rate:
 Percentage analysis shows how many projects succeed vs fail—important for business decision-making.
--Ranking Analysis:
+- Ranking Analysis:
 Using window functions, projects are ranked by funding, helping identify top performers quickly.
--Cumulative Funding Trend:
+- Cumulative Funding Trend:
 Running total shows how funding has grown over the years.
--Funding Goal Achievement:
+- Funding Goal Achievement:
 Using CASE logic, projects are categorized into:
--Goal Achieved
--Not Achieved
+- Goal Achieved
+- Not Achieved
 
 # Crowdfunding_Performance_Project
 ----------------------------------------- Crowd Funding SQL Analysis Performance Queries ------------------------------------------------
@@ -50,8 +50,8 @@ USE croud_funding;
 DESCRIBE main_data_cf_project_1csv;
 ------------------------------------
 # 1. Total Projects by State (failed / canceled / successful)
-
-``SELECT state, COUNT(*) AS croud_funding
+sql```
+SELECT state, COUNT(*) AS croud_funding
 FROM  main_data_cf_project_1csv
 GROUP BY state
 ORDER BY croud_funding DESC;```
