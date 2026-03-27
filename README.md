@@ -1,4 +1,5 @@
 # 📊 Crowd Funding SQL Analysis
+Prformed end-to-end data analysis. In group project.
    
 ## 🔍 Overview   
 
