@@ -1,11 +1,11 @@
-## 📊 Crowd Funding SQL Analysis
-# 🔍 Overview
+# 📊 Crowd Funding SQL Analysis
+## 🔍 Overview
 
 This project focuses on analyzing a crowdfunding dataset using SQL to extract meaningful insights about project performance. 
 The dataset includes details such as project state (successful/failed), funding amount, backers, country, and time trends.
 By applying SQL concepts like aggregation, grouping, window functions, and CASE statements, the project evaluates how different factors impact crowdfunding success.
 
-# 🎯 Objective
+## 🎯 Objective
 
 - The main objectives of this analysis are:
 
@@ -18,7 +18,7 @@ To evaluate the success rate of projects
 To apply window functions for ranking and cumulative analysis
 To determine whether projects achieved their funding goals
 
-# 📈 Key Findings
+## 📈 Key Findings
 
 -- Project Distribution:
 Most projects fall into specific states (e.g., failed or successful), highlighting competition and risk in crowdfunding.
@@ -209,7 +209,7 @@ SELECT
     END AS funding_status
 FROM main_data_cf_project_1csv;
 ```
-# ✅ Conclusion
+## ✅ Conclusion
 
 - This SQL-based analysis provides valuable insights into the crowdfunding ecosystem. The findings show that:
 
